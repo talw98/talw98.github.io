@@ -72,7 +72,7 @@
           <li>Led research on severely class imbalanced multi class tumor classification, achieving AUC improvements of up to <b>8-12%</b> over standard baselines, with statistical validation and ablation studies.</li>
           <li>Ran statistical validation studies (paired t-tests, Cohen's d, Wilcoxon, bootstrap confidence intervals) quantifying a <b>+23.9%</b> recall improvement, presented at IEEE ISBI 2026 (oral).</li>
           <li>Published first author, peer reviewed work at IEEE BioSMART, SPIE Medical Imaging, and IEEE ISBI, with an additional paper accepted at the ECCV 2026 Workshop on AI for Medical 3D Vision (AI4M3D).</li>
-          <li>Built a DICOM to NIfTI extraction pipeline from scratch for a 50 patient, multi scanner clinical dataset, handling heterogeneous vendor protocols (Siemens, GE) and metadata driven identification of four contrast enhanced acquisition phases (arterial, portal venous, venous, tardive) using SeriesDescription and SeriesTime tags, with dcm2niix conversion into a structured NIfTI dataset.</li>
+          <li>Built a DICOM to NIfTI extraction pipeline from scratch for a 50 patient, multi scanner clinical dataset, handling heterogeneous vendor protocols (Siemens, GE) and metadata driven identification of four contrast enhanced acquisition phases (arterial, portal venous, venous, delayed) using SeriesDescription and SeriesTime tags, with dcm2niix conversion into a structured NIfTI dataset.</li>
           <li>Diagnosed a critical GPU compatibility issue (CUDA sm_61 versus the sm_70 minimum required by nnInteractive) blocking the lab's interactive segmentation setup, and designed a cloud native workaround: deployed the nnInteractive inference server on a Google Colab A100 instance and exposed it through an ngrok reverse tunnel, restoring full interactive 3D segmentation in 3D Slicer within one day, with no dependency on local GPU hardware.</li>
           <li>Currently extending this work to a new cholangiocarcinoma (CCA) dataset, building on the existing liver tumor detection and classification pipeline.</li>
         </ul>
@@ -168,6 +168,7 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
 
 
 
