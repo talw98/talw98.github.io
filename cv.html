@@ -31,14 +31,7 @@
   <div class="wrap">
     <div class="slice-label"><span class="n">CV</span> Curriculum Vitae</div>
     <h2 class="section-title" style="margin-bottom:6px;">Talha Waqas</h2>
-    <p style="color:var(--ink-soft); margin-bottom:32px;">PhD Researcher, Artificial Intelligence, Paris, France</p>
-
-    <div class="stat-grid">
-      <div class="stat"><div class="num">100+</div><div class="label">3D MRI volumes analyzed</div></div>
-      <div class="stat"><div class="num">4</div><div class="label">peer-reviewed publications</div></div>
-      <div class="stat"><div class="num">+23.9%</div><div class="label">accuracy improvement, ISBI oral</div></div>
-      <div class="stat"><div class="num">8-12%</div><div class="label">AUC gain on class-imbalanced classification</div></div>
-    </div>
+    <p style="color:var(--ink-soft); margin-bottom:12px;">PhD Researcher, Artificial Intelligence, Paris, France</p>
   </div>
 </section>
 
@@ -78,7 +71,10 @@
           <li>Proposed 2D to 3D consolidation strategies converting slice level predictions into stable volumetric representations, improving localization consistency by <b>15-25%</b> over naive aggregation baselines.</li>
           <li>Led research on severely class imbalanced multi class tumor classification, achieving AUC improvements of up to <b>8-12%</b> over standard baselines, with statistical validation and ablation studies.</li>
           <li>Ran statistical validation studies (paired t-tests, Cohen's d, Wilcoxon, bootstrap confidence intervals) quantifying a <b>+23.9%</b> accuracy improvement, presented at IEEE ISBI 2026 (oral).</li>
-          <li>Published first author, peer reviewed work at IEEE, SPIE, and ISBI, with an additional paper in preparation for the ECCV Workshop on AI for Medical 3D Vision (AI4M3D).</li>
+          <li>Published first author, peer reviewed work at IEEE BioSMART, SPIE Medical Imaging, and IEEE ISBI, with an additional paper accepted at the ECCV Workshop on AI for Medical 3D Vision (AI4M3D).</li>
+          <li>Built a DICOM to NIfTI extraction pipeline from scratch for a 50 patient, multi scanner clinical dataset, handling heterogeneous vendor protocols (Siemens, GE) and metadata driven identification of four contrast enhanced acquisition phases (arterial, portal venous, venous, tardive) using SeriesDescription and SeriesTime tags, with dcm2niix conversion into a structured NIfTI dataset.</li>
+          <li>Diagnosed a critical GPU compatibility issue (CUDA sm_61 versus the sm_70 minimum required by nnInteractive) blocking the lab's interactive segmentation setup, and designed a cloud native workaround: deployed the nnInteractive inference server on a Google Colab A100 instance and exposed it through an ngrok reverse tunnel, restoring full interactive 3D segmentation in 3D Slicer within one day, with no dependency on local GPU hardware.</li>
+          <li>Currently extending this work to a new cholangiocarcinoma (CCA) dataset, building on the existing liver tumor detection and classification pipeline.</li>
         </ul>
       </div>
     </div>
@@ -89,9 +85,11 @@
         <h3>Generative AI Intern (Data Science)</h3>
         <div class="org">Universite Grenoble Alpes, Grenoble, France</div>
         <ul>
-          <li>Integrated a large language model (Mistral Large) into an AI driven educational platform via a Retrieval Augmented Generation (RAG) pipeline.</li>
-          <li>Achieved cosine similarity scores above <b>0.9</b> across 20 real queries and average ROUGE scores above <b>0.6</b>, demonstrating strong contextual accuracy.</li>
-          <li>Built a scalable, containerized system (Docker, MariaDB) for reproducible experimentation and deployment.</li>
+          <li>Built an AI assistant prototype integrating Mistral Large into DOORS, Universite Grenoble Alpes' digital health training platform, automating quiz generation, code generation, and content creation from Jupyter notebooks for the Health Data Management course in the Master's of AI for One Health program.</li>
+          <li>Designed a Retrieval Augmented Generation (RAG) pipeline: extracted and chunked notebook content, generated text embeddings, indexed them with Faiss for similarity search, and combined retrieved context with user queries for prompt based generation through the Mistral Large API.</li>
+          <li>Built a Panel based chat interface connected to the Jupyter API, letting instructors query notebook content and receive generated text and code directly inside JupyterLab.</li>
+          <li>Evaluated output quality on 20 real queries from a case study notebook: all 20 samples scored above <b>0.9</b> cosine similarity against a 0.8 threshold, and ROUGE scores averaged above <b>0.6</b> across ROUGE-1, ROUGE-2, and ROUGE-L.</li>
+          <li>Designed a scalable, containerized deployment (Docker, MariaDB) for reproducible experimentation and future scaling to students and administrators.</li>
         </ul>
       </div>
     </div>
@@ -132,7 +130,7 @@
       <div>
         <h3>AURORA Mobility Grant</h3>
         <div class="org">Visiting Researcher, VU Amsterdam</div>
-        <p>Awarded funding for a research stay at VU Amsterdam. Preparing work for submission to the ECCV Workshop on AI for Medical 3D Vision (AI4M3D) during this period.</p>
+        <p>Awarded funding for a research stay at VU Amsterdam. Preparing the camera-ready version of the accepted ECCV Workshop paper on AI for Medical 3D Vision (AI4M3D) during this period.</p>
       </div>
     </div>
   </div>
