@@ -410,3 +410,30 @@ footer.site{
 }
 footer.site a{ color: var(--ink-faint); text-decoration:none; }
 footer.site a:hover{ color: var(--teal); }
+
+.stat-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  margin: 8px 0 4px;
+}
+.stat{ border-top: 2px solid var(--teal); padding-top: 14px; }
+.stat .num{
+  font-family: var(--display);
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--teal-dark);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.stat .label{
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+}
+.cv-entry ul{ margin: 6px 0 0; padding-left: 18px; color: var(--ink-soft); font-size: 15px; }
+.cv-entry ul li{ margin-bottom: 6px; }
+.cv-entry ul li b{ color: var(--ink); font-weight: 600; }
