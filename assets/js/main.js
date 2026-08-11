@@ -1,4 +1,4 @@
-// Scroll progress — fills the scan line as the page is read
+// Scroll progress - fills the scan line as the page is read
 function initScanProgress(){
   const bar = document.querySelector('.scan-progress');
   if(!bar) return;

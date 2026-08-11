@@ -1,5 +1,5 @@
 /* ============================================================
-   TOKENS — "Slice Scanner" system
+   TOKENS - "Slice Scanner" system
    Inspired by cross-sectional medical imaging: numbered slices,
    scan lines, contrast-teal highlighting.
    ============================================================ */
@@ -50,7 +50,7 @@ img{ max-width:100%; display:block; }
 }
 
 /* ------------------------------------------------------------
-   Scroll progress — the signature scan line
+   Scroll progress - the signature scan line
    ------------------------------------------------------------ */
 .scan-progress{
   position: fixed;
@@ -133,7 +133,7 @@ nav.primary a.active::after{
 }
 
 /* ------------------------------------------------------------
-   Slice eyebrow labels — literal to the imaging subject
+   Slice eyebrow labels - literal to the imaging subject
    ------------------------------------------------------------ */
 .slice-label{
   font-family: var(--mono);
